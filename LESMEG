@@ -1,0 +1,25 @@
+FAST API - 2021 November
+Dette prosjektet følger freecodecamp tutorial https://www.youtube.com/watch?v=0sOvCWFmrtA&t=4195s
+
+#Prosjektet er i venv. Venv opprettes ved å skrive følgende i cmd:
+python -3 -m venv <tittel> (som oppfordres til å bare hete venv)
+Deretter, CTRL + shift + P i VSCode, >Select interpreter > Velge python "venv" interpreter
+VSCode vil deretter gjenkjenne at man er i venv nestre gang man åpner prosjektet! Genialt :)
+
+#Kjøre i gang server:
+uvicorn app.main:app --reload
+((app refererer til mappen "package" "app" (med **init**.py), main refererer til main.py, app refererer til instansen(objectet av fast API ( app = FastAPI() )))
+¨
+
+###################################KOPI_INN_I_CMD######################
+uvicorn app.main:app --reload
+
+#############################################################
+
+BOKMERKE I YOUTUBE:
+Skipper SQL fra 3:14:17 til 3:53:45
+
+10:06:50
+(fulgte ikke så mye med på SQL join sesjonen)
+
+11:23:43
