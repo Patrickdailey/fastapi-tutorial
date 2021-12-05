@@ -25,7 +25,7 @@ TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engin
 # client = TestClient(app)
 
 
-@pytest.fixture
+@pytest.fixture()
 def session():
     Base.metadata.drop_all(bind=engine)
     # denne lager databasetabellene
@@ -37,7 +37,7 @@ def session():
         db.close()
 
 
-@pytest.fixture
+@pytest.fixture()
 def client(session):
     # run our code, before we return our test. Se tutorial, 15:39:30
     def override_get_db():
